@@ -1,3 +1,4 @@
+
 #productSection {
     display: flex;
     flex-flow: column;
@@ -52,7 +53,8 @@
 #bigImage {
     order: 2;
     height: 312px;
-    width: 287px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -273,20 +275,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .seeAll {
-    padding: 20px 0px 30px 50px;
+    padding: 10px 0px 0px 0px;
+    text-align:center;
 }
 
 .seeAll a {
+    color: #179FFE;
     padding: 0px 20px;
     text-decoration: none;
 
+}
+.seeAll a:after{
+    content: '   >';
 }
 
 .seeAll input {
     background-color: #FFA028;
     color: #FFFFFF;
     border-radius: 10px;
-    margin: 5px 0px;
+    margin: 21px 0px;
     width: 215px;
     font-size: 16px;
     height: 60px;
@@ -302,18 +309,21 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .reviewSection .name p {
-    font-size: 18px;
+    font-size: 16px;
+    color: #6D858D;
     padding: 20px 20px 0px 20px;
 }
 
 .reviewSection .rating {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 20px 0px 20px;
 }
 
 .reviewSection .review p {
-    font-size: 16px;
-    padding: 10px 20px 20px 20px;
+    color: #6D858D;
+    font-size: 15px;
+    padding: 19px 20px 18px 22px;
+    line-height: 1.5em;
 }
 
 .product {
@@ -599,11 +609,11 @@ label.star:before {
 .imageActive {}
 
 .bigImage {
-    width: 432px;
+
     height: 520px;
-    padding: 5px;
+
     border: 1px solid #CAE7E8;
-    margin: 20px 0px;
+    margin: 5px 0px;
 }
 
 .bigImage img {
@@ -624,14 +634,22 @@ label.star:before {
 
 .information {
 
+
     display: flex;
 
     order: 1
 }
 
-.information .review {
-    padding: 0px 0px 0px 0px;
-}
+   
+    .information .review{
+        
+        
+        width: 60%;
+                     padding:16px 44px 12px 32px;
+                     color: #6D858D;
+                     font-size: 12px;
+                 }
+
 
 
 .quantity {
@@ -713,6 +731,8 @@ label.star:before {
 .saving p {
     padding: 5px 25px 0px 25px;
 }
+
+
 
 
 
