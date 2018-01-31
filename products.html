@@ -63,8 +63,8 @@
 
         <div id="productSection">
             <div class="listImage">
-                <img id="upArrow" src="assets/image/arrow-up.png" alt="">
-                <div id="productsImg" class="images">
+                <img id="upArrow" src="assets/image/arrow-up.png"  alt="">
+                <div id="productsImg" class="images" onclick="changeImageOnClick(event)">
                     <img class="liactive" src="assets/image/dogfood.svg" alt="">
                     <img src="assets/image/doogimage.svg" alt="">
                     <img src="assets/image/dogfood.svg" alt="">
@@ -76,7 +76,7 @@
 
 
 <script>
-            var images = document.getElementById("divId")
+            var images = document.getElementById("productsImg")
                              .getElementsByTagName("img");
 
         for (var i = 0; i < images.length; i++)
@@ -84,12 +84,12 @@
             images[i].onmouseover = function ()
             {
                 this.style.cursor = 'hand';
-                this.style.borderColor = 'red';
+                this.style.borderColor = '#179FFE';
             }
             images[i].onmouseout = function ()
             {
                 this.style.cursor = 'pointer';
-                this.style.borderColor = 'grey';
+                this.style.borderColor = '#CAE7E8';
             }
         }
 
