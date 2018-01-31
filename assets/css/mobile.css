@@ -206,7 +206,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
     text-align: center;
 
-    width: 150%;
+    width: 100%;
 
 }
 
@@ -658,7 +658,7 @@ label.star:before {
         
         
         width: 100%;
-                     padding:16px 0px 12px 0px;
+                     padding:7px 0px 10px 0px;
                      color: #6D858D;
                      font-size: 12px;
                  }

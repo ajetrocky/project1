@@ -172,7 +172,7 @@
 
 
   function increaseValue() {
-      alert("inc");
+      
       var value = parseInt(document.getElementById('number').innerHTML, 10);
       value = isNaN(value) ? 0 : value;
       value++;
@@ -180,7 +180,7 @@
   }
 
   function decreaseValue() {
-      alert("dec");
+      
       var value = parseInt(document.getElementById('number').innerHTML, 10);
       value = isNaN(value) ? 0 : value;
       value < 1 ? value = 1 : '';
