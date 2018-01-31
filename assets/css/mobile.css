@@ -6,16 +6,16 @@
 }
 
 #productsImg {
-    display: none;
+    display: block;
     grid-template-rows: auto;
 
     width: 102px;
 }
 
 .listImage {
-    display: none;
+    display: block;
     grid-template-rows: auto;
-    width: 102px;
+    width: 90%;
 }
 
 #upArrow {
@@ -34,15 +34,16 @@
 
 .listImage .image {
     display: grid;
-    grid-auto-rows: auto;
-
+    grid-auto-rows: auto auto;
+width: 100px;
+    display: inline;
 
     overflow: hidden;
 }
 
 .listImage .images img {
     height: 102px;
-    width: 102px;
+    width: 100%;
     padding: 2px;
     margin: 10px 0px;
     border: 1px solid #CAE7E8;
@@ -585,11 +586,14 @@ label.star:before {
 
 #productsImg {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
 
-    width: 102px;
+    width: 100%;
 }
-
+#productsImg img{
+    height: 400px;
+    width: 400px;
+}
 #upArrow {
     text-align: center;
     height: 14px;
@@ -603,7 +607,9 @@ label.star:before {
     width: 14px;
     margin: 0 auto;
 }
-
+.listImage{
+    order: 2;
+}
 .listImage .image {
     display: grid;
     grid-auto-rows: auto;
@@ -623,6 +629,7 @@ label.star:before {
 .imageActive {}
 
 .bigImage {
+    display: none;
 
     height: 520px;
 
@@ -658,8 +665,8 @@ label.star:before {
     .information .review{
         
         
-        width: 100%;
-                     padding:7px 0px 10px 0px;
+        width: 60%;
+                     padding:10px 40px 15px 29px;
                      color: #6D858D;
                      font-size: 12px;
                  }

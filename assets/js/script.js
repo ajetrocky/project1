@@ -2,7 +2,36 @@
 
 
       $(document).ready(function () {
+$("#productsImg").slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      vertical: true,
+      prevArrow: $("#upArrow"),
+      nextArrow: $("#downArrow"),
 
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 3
+              }
+    },
+          {
+              breakpoint: 480,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+              }
+    }
+  ]
+
+  });
 
 
           $(".logslide").slick({
@@ -95,6 +124,53 @@
 
 
 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+
+      function currentSlideProduct(n) {
+          showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlidesProduct");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+              slideIndex = 1
+          }
+          if (n < 1) {
+              slideIndex = slides.length
+          }
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+
+
+
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
 
 
 
@@ -188,33 +264,4 @@
       document.getElementById('number').innerHTML = value;
   }
 
-  $("#productsImg").slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      vertical: true,
-      prevArrow: $("#upArrow"),
-      nextArrow: $("#downArrow"),
-
-      responsive: [
-          {
-              breakpoint: 768,
-              settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 3
-              }
-    },
-          {
-              breakpoint: 480,
-              settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 1
-              }
-    }
-  ]
-
-  });
+  

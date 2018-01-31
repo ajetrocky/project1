@@ -852,7 +852,7 @@ label.star:before {
         }
         .listImage{
             display: grid;
-            grid-template-rows: auto;
+            grid-template-rows: auto ;
                  width: 102px;
         }
         #upArrow{

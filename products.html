@@ -63,18 +63,34 @@
 
         <div id="productSection">
             <div class="listImage">
-                <img id="upArrow" src="assets/image/arrow-up.png"  alt="">
+                <img id="upArrow" class="notOnMobile" src="assets/image/arrow-up.png"  alt="">
                 <div id="productsImg" class="images" onclick="changeImageOnClick(event)">
-                    <img class="liactive" src="assets/image/dogfood.svg" alt="">
-                    <img src="assets/image/doogimage.svg" alt="">
-                    <img src="assets/image/dogfood.svg" alt="">
-                    <img src="assets/image/doogimage.svg" alt="">
+                    <img class="mySlidesProduct " src="assets/image/dogfood.svg" alt="">
+                    <img  class="mySlidesProduct " src="assets/image/doogimage.svg" alt="">
+                    <img class="mySlidesProduct " src="assets/image/dogfood.svg" alt="">
+                    <img class="mySlidesProduct " src="assets/image/doogimage.svg" alt="">
 
+                
                 </div>
-                <img id="downArrow" src="assets/image/arrow-down.png" alt="">
+                <div class="prdots" style="text-align: center;">
+                    
+                <span class="dot" onclick="currentSlideProduct(1)"></span>
+                <span class="dot" onclick="currentSlideProduct(2)"></span>
+                <span class="dot" onclick="currentSlideProduct(3)"></span>
+                <span class="dot" onclick="currentSlideProduct(4)"></span>
+                
+                    
+                </div>
+                <img id="downArrow" class="notOnMobile" src="assets/image/arrow-down.png" alt="">
+               
+
             </div>
 
-
+<style>
+    .mySlidesProduct{
+        display: none;
+    }
+            </style>
 <script>
             var images = document.getElementById("productsImg")
                              .getElementsByTagName("img");
