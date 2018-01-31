@@ -432,63 +432,26 @@ hr{
     
                  
                  
-                 </style>     
-                 <style>
-                     .value-button img{
-                         height: 100%;
-                         width: 100%;
-                     }
+ 
                      
-.value-button {
-    
-  display: inline-block;
-  border: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 33px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 10px;
-    
-  background: #eee;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-    border: 2px solid #179FFE;
-}
+
 
 .value-button:hover {
   cursor: pointer;
 }
 
 form #decrease {
-  margin-right: -4px;
+  
   border-radius: 8px 0 0 8px;
 }
 
 form #increase {
-  margin-left: -4px;
+  
   border-radius: 0 8px 8px 0;
 }
 
 form #input-wrap {
-  margin: 0px;
-  padding: 0px;
-}
-
-input#number {
-  text-align: center;
-  border: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 50px;
-    padding: 0px 10px;
-    border: 2px solid #179FFE;
+ 
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -514,12 +477,6 @@ input[type=number]::-webkit-outer-spin-button {
                          
                          
                      }
-                     .qunt{
-                          
-                         width: 50%;
-                           padding: 25px 25px 0px 0px;
-                          
-                     }
                      
                      
                      
@@ -529,22 +486,33 @@ input[type=number]::-webkit-outer-spin-button {
                      
                      
                      
-                     #countSelect{
+.count{
+    appearance:none;
+}
+                     #countSelect {
                          margin: 0 auto;
                          text-align: center;
                          height: 54px;
-                         width: 215px;
+
                          border: 1px solid #179FFE;
+
+                         padding: 13px;
+                         font-size: 16px;
+                         line-height: 1;
+                         border: 2px solid #179FFE;
+                         border-radius: 10px;
+                         height: 54px;
+                         background: url(../image/arrow-down.png) no-repeat right #ffff;
+                         -webkit-appearance: none;
+                         background-position: 194px;
                          
+                         width: 84%;
+
                      }
-                     
-                     .qunt{
-                         margin: 0 auto;
-                         text-align: center;
-                         
-                         width: 215px;
-                         
-                     }
+.qunt{
+    padding: 23px;
+}
+                    
 .addToCart{
                          width: 100%;
                         
@@ -961,7 +929,10 @@ label.star:before {
                        padding: 5px 25px 0px 25px;
                  }
 
-
+.saving span{
+      color: #FFA028;
+    font-size: 16px;
+}
 .saving p{
                     padding: 5px 25px 0px 25px;
                  }
