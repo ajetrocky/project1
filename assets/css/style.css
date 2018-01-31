@@ -526,7 +526,7 @@ input[type=number]::-webkit-outer-spin-button {
                      
                      .addToCart .review{
                         
-                         width: 50%;
+                         width: 100%;
                          
                          padding: 0px 0px 0px 25px;
                          
@@ -578,10 +578,14 @@ margin: 15px 0px;
                padding: 20px 0px 30px 50px;
            }
            .seeAll a{
+               color: #179FFE;
                padding: 0px 20px;
                text-decoration: none;
               
            }
+.seeAll a:after{
+    content: '   >';
+}
            .seeAll input{
                background-color: #FFA028;
   color: #FFFFFF;
@@ -602,15 +606,19 @@ margin: 5px 0px;
            
            .reviewSection .name p{
                font-size: 18px;
+               color: #6D858D;
                padding: 20px 20px 0px 20px;
            }
            
            .reviewSection .rating{
                font-size: 18px;
+               
                padding: 10px 20px 0px 20px;
            }
            
            .reviewSection .review p{
+               line-height: 1.5em;
+               color: #6D858D;
                font-size: 16px;
                padding: 10px 20px 20px 20px;
            }

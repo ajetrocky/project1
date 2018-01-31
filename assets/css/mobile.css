@@ -197,8 +197,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
     text-align: center;
     height: 54px;
-    width: 94%;
-    border: 1px solid #179FFE;
+    width: 95%;
+    border: 2px solid #179FFE;
 
 }
 
@@ -224,40 +224,53 @@ input[type=number]::-webkit-outer-spin-button {
 
 .addToCart .review {
 
-    width: 100%;
+    
 
-    padding: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 0px;
 
 
 }
 
 .addToCart .review input {
+ margin: 15px 0px;
     background-color: #FFA028;
-    color: #FFFFFF;
+    color: #ffffff;
+    width: 95%;
     border-radius: 10px;
-    margin: 15px 0px;
-    width: 215px;
-    font-size: 16px;
     height: 60px;
-    font-weight: 100;
+    font-size: 16px;
+    border: 1px solid #FFA028;
     font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .addToCart .cart input {
     margin: 15px 0px;
     background-color: #ffffff;
     color: #FFA028;
-    width: 215px;
+    width: 95%;
     border-radius: 10px;
     height: 60px;
     font-size: 16px;
     border: 1px solid #FFA028;
     font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .addToCart .cart {
+margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
 
-    width: 50%;
+}
+
+.addToCart .review {
+margin: 0 auto;
+    text-align: center;
+    width: 100%;
     padding: 0px 0px 0px 0px;
 
 }
@@ -336,7 +349,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px;
     color: #6D858D;
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     text-align: center;
 
 }
@@ -344,8 +357,8 @@ input[type=number]::-webkit-outer-spin-button {
 .aboutThis .product p {
     font-size: 16px;
     color: #6D858D;
-    line-height: 1.4em;
-    padding: 0px 20px;
+    line-height: 1.7em;
+    padding: 0px 10px;
     padding-bottom: 20px;
 
 }
@@ -353,7 +366,7 @@ input[type=number]::-webkit-outer-spin-button {
 .aboutThis {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 400px;
+    margin-top: 500px;
 }
 
 
@@ -711,7 +724,7 @@ label.star:before {
 
 .addToCart {
     position: absolute;
-    top: 1880px;
+    top: 2020px;
 
 }
 
@@ -740,7 +753,32 @@ label.star:before {
 
 
 
+.count{
+    appearance:none;
+}
+                     #countSelect {
+                         margin: 0 auto;
+                         text-align: center;
+                         height: 54px;
 
+                         border: 1px solid #179FFE;
+
+                         padding: 13px;
+                         font-size: 16px;
+                         line-height: 1;
+                         border: 2px solid #179FFE;
+                         border-radius: 10px;
+                         height: 54px;
+                         background: url(../image/arrow-down.png) no-repeat right #ffff;
+                         -webkit-appearance: none;
+                         background-position: 194px;
+                         
+                         width: 84%;
+
+                     }
+.qunt{
+    padding: 0px;
+}
 
 
 
