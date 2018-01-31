@@ -573,7 +573,9 @@ label.star:before {
     text-align: center;
 
 }
-
+#productsImg{
+    margin-top: 20px;
+}
 
 .modalButton input {
     background: #FFA028;
@@ -591,9 +593,10 @@ label.star:before {
     grid-template-columns: auto;
 
     width: 100%;
+    margin: 0 auto;
 }
 #productsImg img{
-    height: 400px;
+    height: 327px;
     width: 100%;
 }
 #upArrow {
