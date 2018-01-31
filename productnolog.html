@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="assets/js/slick-1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="assets/js/slick-1.8.0/slick/slick-theme.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <nav>
+        <img src="assets/image/nav.svg" alt="">
+        <img class="logo" src="assets/image/logo.svg" alt="">
+        <div class="s">
+            <input class="notOnMobile" type="text">
+
+        </div>
+
+        <p><a class="log notOnMobile " href="">LOG IN | SIGNUP</a></p>
+        <img class="notOnMobile" src="assets/image/cart.svg" alt="">
+    </nav>
+    <hr>
+    <style>
+        nav {
+            display: grid;
+            grid-template-columns: 5% 10% 60% 15% 5%;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        nav p a {
+            text-decoration: none;
+            color: #179FFE;
+        }
+
+    </style>
+    <div id="wrapper">
+        <div class="goBack">
+            <li>
+                <img src="assets/image/arrow-left.png" alt="">
+            </li>
+            <li>
+                <p>
+                    Go Back
+                </p>
+
+            </li>
+        </div>
+
+        <div id="productSection">
+            <div class="listImage">
+                <img id="upArrow" src="assets/image/arrow-up.png" alt="">
+                <div id="productsImg" class="images">
+                    <img class="liactive" src="assets/image/dogfood.svg" alt="">
+                    <img src="assets/image/doogimage.svg" alt="">
+                    <img src="assets/image/dogfood.svg" alt="">
+                    <img src="assets/image/doogimage.svg" alt="">
+
+                </div>
+                <img id="downArrow" src="assets/image/arrow-down.png" alt="">
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div id="bigImage" class="bigImage">
+                <img src="assets/image/doogimage.svg" alt="">
+            </div>
+
+
+
+
+            <div class="information">
+                <div class="headInfo">
+                    <div class="info">
+                        <p>Pedigree Dentastix Large original Treat (18-Count)
+
+                        </p>
+
+                    </div>
+                    <div class="review">
+
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>423 Review</span>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="listPrice">
+                    <p>List Price - $xxxx</p>
+
+                </div>
+
+
+
+
+
+                <div class="price">
+                    <p>XXXX</p>
+
+                </div>
+
+
+
+
+
+
+                <div class="saving">
+                    <p>
+                        You Save - $XXXX
+                    </p>
+
+                </div>
+
+
+
+                <div class="quantity">
+                    <div class="count">
+                        <select name="" id="countSelect">
+                     <option value="">1</option>
+                     <option value="">2</option>
+                     <option value="">3</option>
+                     <option value="">4</option>
+                     <option value="">5</option>
+                     
+                 </select>
+                    </div>
+
+
+
+
+
+                    <div class="qunt">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><img src="assets/image/triangle-down.png" alt=""></div>
+
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><img src="assets/image/triangle-up.png" alt=""></div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="addToCart">
+                    <div class="review">
+                        <input type="button" id="myBtn" value="Write A Review">
+                    </div>
+
+                    <div class="cart">
+                        <input type="button" value="Add To Cart">
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <!----Product Section---->
+
+
+
+
+    </div>
+    <div class="vetReview">
+
+
+        <div id="wrapper">
+
+            <p>
+                Veterinarians Review
+            </p>
+
+
+        </div>
+        <!----vetReview---->
+    </div>
+
+
+
+
+    <div id="wrapper">
+
+
+
+
+
+
+        <div class="reviewSection">
+
+            <div class="name">
+                <p>
+                    Name
+                </p>
+            </div>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perferendis totam deserunt debitis animi maxime a nostrum! Tempora laudantium, fugiat reiciendis deleniti qui libero repellat numquam fugit, nemo ipsa veniam.</p>
+            </div>
+
+
+
+
+
+
+            <div class="name">
+                <p>
+                    Name
+                </p>
+            </div>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perferendis totam deserunt debitis animi maxime a nostrum! Tempora laudantium, fugiat reiciendis deleniti qui libero repellat numquam fugit, nemo ipsa veniam.</p>
+            </div>
+
+
+
+
+
+
+
+            <div class="name">
+                <p>
+                    Name
+                </p>
+            </div>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perferendis totam deserunt debitis animi maxime a nostrum! Tempora laudantium, fugiat reiciendis deleniti qui libero repellat numquam fugit, nemo ipsa veniam.</p>
+            </div>
+
+
+
+
+
+            <div class="seeAll">
+                <a href="#">See All Reviews</a>
+                <input type="button" id="myBBtn" value="WRITE A REVIEW">
+            </div>
+
+            <hr size="3" class="onMobile">
+
+
+
+
+
+        </div>
+        <!----vetReview---->
+
+
+
+
+        <div class="aboutThis">
+            <div class="product">
+                <h1>About This Product</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum quisquam repudiandae, et neque officia officiis accusamus, natus placeat. Harum ipsam iusto, aspernatur eaque eligendi, pariatur aliquam. Earum, doloremque, suscipit.
+                </p>
+                <br>
+
+
+
+
+
+
+                <h1>Caloric Content</h1>
+                <br>
+                <p>
+                    2.94kg, 32gkf
+                </p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="analysis">
+                <div class="headerAnalysis">
+                    <p>
+                        Guarenteed Analysis
+                    </p>
+
+                </div>
+
+                <div class="analysisOpeartion">
+                    <div class="listleft">
+                        <h5>Grude</h5>
+                        <h5>Grude</h5>
+                        <h5>Grude</h5>
+                        <h5>Grude</h5>
+                    </div>
+
+
+
+
+                    <div class="listright">
+                        <h5>34.24</h5>
+                        <h5>34.24</h5>
+                        <h5>34.24</h5>
+                        <h5>34.24</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h1>
+                    Write A Review
+                </h1>
+
+                <p>
+                    May Clark , DVM is your public name.
+                </p>
+
+
+                <div class="product">
+                    <div class="imageRev">
+                        <div class="image">
+                            <img src="doogimage.svg" alt="">
+                        </div>
+                        <div class="name">
+                            Pedigree Dentastix Large Original Dog Treats (18-count)
+                        </div>
+                    </div>
+
+                    <div class="stars">
+
+                        <form action="">
+
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+
+                            <label class="star star-4" for="star-4"></label>
+
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+
+                            <label class="star star-3" for="star-3"></label>
+
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+
+                            <label class="star star-2" for="star-2"></label>
+
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+
+                            <label class="star star-1" for="star-1"></label>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+                <form action="" id="modalForm">
+                    <div class="modalName">
+                        <p>
+                            VET PROFILE LINK<br><br>
+                            <input type="text">
+                        </p>
+
+                        <p>
+                            EMAIL<br><br>
+                            <input type="text">
+                        </p>
+
+                    </div>
+
+                    <div class="modalMessage">
+                        <p>
+                            WRITE REVIEW<br>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </p>
+                    </div>
+
+                </form>
+                <div class="modalButton">
+                    <input type="button" value="SUBMIT">
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+
+
+
+
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+
+    </div>
+    <!----Wrapper---->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/js/slick-1.8.0/slick/slick.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
