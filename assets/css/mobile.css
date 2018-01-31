@@ -583,7 +583,9 @@ label.star:before {
 
 
 }
-
+.prdots{
+    padding: 20px 0px;
+}
 #productsImg {
     display: grid;
     grid-template-columns: auto;
@@ -592,7 +594,7 @@ label.star:before {
 }
 #productsImg img{
     height: 400px;
-    width: 400px;
+    width: 100%;
 }
 #upArrow {
     text-align: center;
