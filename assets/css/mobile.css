@@ -363,10 +363,11 @@ margin: 0 auto;
 
 }
 
+
 .aboutThis {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 500px;
+    margin-top: 410px;
 }
 
 
@@ -701,7 +702,7 @@ label.star:before {
 
 .listPrice {
     position: absolute;
-    top: 1890px;
+    top: 1830px;
 
 
 }
@@ -715,7 +716,7 @@ label.star:before {
 
 .price {
     position: absolute;
-    top: 1970px;
+    top: 1910px;
 
 }
 
@@ -727,7 +728,7 @@ label.star:before {
 
 .addToCart {
     position: absolute;
-    top: 2020px;
+    top: 1970px;
 
 }
 
